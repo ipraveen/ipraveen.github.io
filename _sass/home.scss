@@ -1,5 +1,11 @@
-
 .showcase.home {
+    .container {
+        justify-content: space-between;
+    }
+
+    .showcase-image{
+        transform: translateY(40px);
+    }
 
     @media (max-width: $tablet-breakpoint) {
         & {
@@ -15,21 +21,6 @@
         }
     }
 
-    .showcase-image {
-        color: var(--primary-color);
-    }
-
-    .card {
-        position: relative;
-        top: 30px;
-        height: 300px;
-        width: 400px;
-        padding: 40px;
-        overflow: visible;
-        z-index: 100;
-        overflow: hidden;
-    }
-
     h1 {
         font-size: 1.2rem;
         font-weight: bold;
@@ -39,16 +30,11 @@
         margin: 20px 0;
         color: var(--primary-invert-color);
     }
-}
 
-.carousel-item {
-    min-height: 200px;
-}
-
-@media (max-width: $tablet-breakpoint) {
-    .cli .grid,
-    .cloud .grid {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
+    img {
+        width: 300px;
+        transform: rotate(3deg);
+        border: 4px solid hsla(0, 0%, 100%, 100%);
+        border-radius: 10px;
     }
 }
