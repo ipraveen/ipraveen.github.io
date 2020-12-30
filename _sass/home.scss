@@ -1,0 +1,54 @@
+
+.showcase.home {
+
+    @media (max-width: $tablet-breakpoint) {
+        & {
+            display: none;
+        }
+    }
+
+    .social {
+        color: #ffffff;
+
+        .fab {
+            margin-right: 15px;
+        }
+    }
+
+    .showcase-image {
+        color: var(--primary-color);
+    }
+
+    .card {
+        position: relative;
+        top: 30px;
+        height: 300px;
+        width: 400px;
+        padding: 40px;
+        overflow: visible;
+        z-index: 100;
+        overflow: hidden;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    p {
+        margin: 20px 0;
+        color: var(--primary-invert-color);
+    }
+}
+
+.carousel-item {
+    min-height: 200px;
+}
+
+@media (max-width: $tablet-breakpoint) {
+    .cli .grid,
+    .cloud .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+}

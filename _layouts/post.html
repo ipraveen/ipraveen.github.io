@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<section class="post bg-light">
+    <div class="showcase post-banner bg-primary">
+        <div class="container">
+            <h1>{{ page.title }}</h1>
+            <div class="bio">
+                <img src="/assets/images/praveen.png" alt="" />
+                <div class="info">
+                    <span class="author">Praveen Singh</span>
+                    <span class="date">{{ page.date | date_to_string }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container grid">
+        {% include app/social.html %}
+        <article>{{ content }}</article>
+    </div>
+</section>

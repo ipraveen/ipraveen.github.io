@@ -1,0 +1,131 @@
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+
+$mobile-breakpoint: 500px;
+$tablet-breakpoint: 768px;
+
+:root {
+    --primary-color: #6bb696;
+    --primary-color-gradient-end: #b3e6d0;
+    --primary-invert-color: #e0ece4;
+    --primary-invert-bold-color: #fff;
+    --secondary-color: #1c3fa8;
+    --dark-color: #002240;
+    --light-color: #f4f4f4;
+    --success-color: #5cb85c;
+    --error-color: #d9534f;
+    --primary-post-color: #495464;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    // font-family: 'Roboto', sans-serif;
+    // font-family: 'Slabo 27px', serif;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+h1,
+h2 {
+    line-height: 1.2;
+    margin: 10px 0;
+}
+h1 {
+    font-weight: 600;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1.55rem;
+    color: black;
+    font-weight: 400;
+}
+
+img {
+    width: 100%;
+}
+
+.hidden {
+    visibility: hidden;
+    height: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0px 15px 0px rgba(0, 0, 0, 0.15);
+    margin: 30px 0;
+
+    thead {
+        th {
+            font-size: 18px;
+            color: #fff;
+            line-height: 1.4;
+            background-color: var(--primary-color);
+            padding-top: 18px;
+            padding-bottom: 18px;
+        }
+    }
+
+    tbody {
+        td {
+            font-size: 15px;
+            color: #808080;
+            line-height: 1.4;
+            padding: 15px;
+            padding-bottom: 16px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8f6ff;
+        }
+    }
+}
+
+main {
+    min-height: calc(100vh-100px);
+}
+
+@media (max-width: $tablet-breakpoint) {
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+}
+
+.showcase {
+    .container {
+        padding: 30px 50px;
+
+        // background: #eacda3;  /* fallback for old browsers */
+        // background: -webkit-linear-gradient(to right, #d6ae7b, #eacda3);  /* Chrome 10-25, Safari 5.1-6 */
+        // background: linear-gradient(to right, #d6ae7b, #eacda3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+      
+    }
+}

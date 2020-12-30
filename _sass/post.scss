@@ -1,0 +1,149 @@
+.post {
+    font-size: 18px;
+    color: rgb(49, 67, 81);
+
+    @media (max-width: $tablet-breakpoint) {
+        padding: 10px;
+    }
+
+    .grid {
+        grid-template-columns: 80px auto;
+        margin-top: 30px;
+
+        @media (max-width: $tablet-breakpoint) {
+            grid-template-columns: auto;
+            margin-top: 5px;
+        }
+    }
+
+    .social {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-self: flex-start;
+        padding-top: 48px;
+        gap: 30px;
+
+        @media (max-width: $tablet-breakpoint) {
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+    .post-banner {
+        h1 {
+            margin: 0px;
+            font-size: 2.6rem;
+            font-weight: 500;
+            margin: 0 0 30px 0;
+            color: var(--primary-invert-bold-color);
+
+            @media (max-width: $tablet-breakpoint) {
+                font-size: 1.8rem;
+                padding: 10px 0;
+            }
+        }
+    }
+
+    .bio {
+        display: flex;
+        color: var(--primary-invert-color);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        .info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        img {
+            width: 40px;
+            border-radius: 40px;
+            border: 1px solid #ccc;
+            margin-right: 10px;
+        }
+        .info {
+            display: flex;
+
+            .author {
+                font-size: 1rem;
+                line-height: 1.2;
+                display: block;
+                font-weight: bold;
+            }
+
+            .date {
+                font-size: 13px;
+                line-height: 1.8;
+                display: block;
+                font-style: italic;
+            }
+        }
+    }
+
+    h1,
+    h2,
+    h3 {
+        line-height: 1.2;
+        letter-spacing: -0.01em;
+        margin: 1.8em 0px 0.8em;
+        color: var(--primary-post-color);
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        line-height: 1.4;
+        letter-spacing: -0.005em;
+        color: var(--primary-post-color);
+    }
+
+    ol,
+    ul {
+        padding: revert;
+        margin: revert;
+    }
+
+    blockquote {
+        border-left: 3px solid rgb(29, 43, 54);
+        margin: 35px 0px;
+        padding: 5px 0px 5px 18px;
+        background: #cccccc3d;
+    }
+}
+
+.posts {
+    margin-top: 50px;
+    margin-bottom: 60px;
+
+    @media (max-width: $tablet-breakpoint) {
+        margin-top: 5px;
+    }
+    .card {
+        h1 {
+            font-size: 1.2rem;
+        }
+    }
+    .card .grid {
+        justify-content: space-between;
+        grid-template-columns: 60px auto;
+        justify-content: flex-start;
+        grid-auto-rows: 80px;
+    }
+
+    .fab {
+        color: var(--dark-color);
+    }
+}

@@ -1,0 +1,16 @@
+<section class="posts">
+    <h1 class="stats-heading text-center my-1">Articles</h1>
+    <div class="container grid">
+        {% for post in site.posts %}
+        <a href="{{site.baseurl}}{{ post.url }}">
+            <div class="card">
+                <h1>{{ post.title }}</h1>
+                <div class="grid">
+                    <i class="fab {{post.iconClass }} fa-4x"></i>
+                    <p>{{ post.summary }}</p>
+                </div>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+</section>
