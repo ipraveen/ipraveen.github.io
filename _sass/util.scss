@@ -1,7 +1,6 @@
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 40px;
     @media (max-width: $tablet-breakpoint) {
         & {
             padding: 0 4px;
@@ -96,6 +95,11 @@
 
 .text-center {
     text-align: center;
+}
+
+.center{
+    display: grid;
+    place-content: center;
 }
 
 // Alerts

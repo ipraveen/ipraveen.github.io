@@ -18,6 +18,12 @@ section.header {
             color: rgb(49, 67, 81);
         }
 
+        span{
+            color: gray;
+            font-size: 1rem;
+            font-style: italic;
+        }
+
         @media (max-width: $mobile-breakpoint) {
             justify-content: center;
             align-items: center;
