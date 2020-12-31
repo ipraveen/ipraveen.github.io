@@ -3,11 +3,11 @@ layout: default
 ---
 
 <section class="post bg-light">
-    <div class="post-banner bg-primary">
+    <div class="post-banner">
         <div class="container">
             <h1>{{ page.title }}</h1>
             <div class="bio">
-                <img src="/assets/images/praveen.png" alt="" />
+                {% include app/image.html src="praveen.png"  alt="Praveen" %}
                 <div class="info">
                     <span class="author">Praveen Singh</span>
                     <span class="date">{{ page.date | date_to_string }}</span>

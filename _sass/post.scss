@@ -118,10 +118,10 @@
     }
 
     blockquote {
-        border-left: 3px solid rgb(29, 43, 54);
         margin: 35px 0px;
-        padding: 5px 0px 5px 18px;
-        background: #cccccc3d;
+        border-left: 10px solid var(--light-coral);
+        background: var(--light-coral-light);
+        padding: 1rem;
     }
 }
 

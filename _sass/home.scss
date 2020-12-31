@@ -1,14 +1,35 @@
-.intro-banner, .post-banner {
+.intro-banner,
+.post-banner {
     background-color: #444e5c;
     border-left: 17px solid rgba(0, 0, 0, 0.2);
 
     .grid {
         grid-template-columns: 60% 40%;
 
-        .showcase-image{
-            display: grid;
-            justify-items: end;
-            align-items: center;
+        .showcase-image {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-end;
+            img {
+                margin-bottom: 30px;
+            }
+
+            .fab {
+                font-size: 1.6em;
+            }
+        }
+
+        .showcase-text{
+            .bttns{
+                margin-top: 4rem;
+                a{
+                   margin-right: 40px;
+                   width: 140px;
+                   text-align: center;
+                   text-transform: uppercase;
+                }
+            }
         }
     }
 
