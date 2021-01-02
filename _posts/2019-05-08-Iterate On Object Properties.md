@@ -1,4 +1,5 @@
 ---
+postId: "js-iterate-on-object"
 layout: post
 author: Praveen Singh
 tags: javascript

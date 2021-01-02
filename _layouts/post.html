@@ -7,7 +7,7 @@ layout: default
         <div class="container">
             <h1>{{ page.title }}</h1>
             <div class="bio">
-                {% include app/image.html src="praveen.png"  alt="Praveen" %}
+                {% include app/image.html src="praveen.png" alt="Praveen" %}
                 <div class="info">
                     <span class="author">Praveen Singh</span>
                     <span class="date">{{ page.date | date_to_string }}</span>
@@ -19,4 +19,23 @@ layout: default
         {% include app/social.html %}
         <article>{{ content }}</article>
     </div>
+
+    <div class="container">
+        <div id="disqus_thread"></div>
+    </div>
 </section>
+
+<script>
+    var disqus_config = function () {
+        this.page.url = "{{ page.url }}"; // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = "{{page.postId}}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    (function () {
+        // DON'T EDIT BELOW THIS LINE
+        var d = document,
+            s = d.createElement('script');
+        s.src = 'https://praveensingh-tech.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
