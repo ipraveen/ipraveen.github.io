@@ -13,23 +13,34 @@
             flex-direction: column;
             justify-content: space-between;
             align-items: flex-end;
+            > div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .fab {
+                    margin-right: 1rem;
+                }
+            }
             img {
                 margin-bottom: 30px;
-                width: 200px;
+                width: 180px;
                 border: 4px solid hsla(0, 0%, 100%, 100%);
                 border-radius: 200px;
             }
-
         }
 
-        .showcase-text{
-            .bttns{
-                margin-top: 4rem;
-                a{
-                   margin-right: 40px;
-                   width: 180px;
-                   text-align: center;
-                   text-transform: uppercase;
+        .showcase-text {
+            p {
+                margin: 1rem 0;
+            }
+            .bttns {
+                margin-top: 2rem;
+                a {
+                    margin-right: 40px;
+                    width: 180px;
+                    text-align: center;
+                    text-transform: uppercase;
                 }
             }
         }
@@ -51,11 +62,10 @@
         font-size: 1rem;
     }
 
-    .icon{
+    .icon {
         justify-self: flex-end;
     }
 }
-
 
 .verticals {
     padding-top: 50px;
@@ -66,14 +76,13 @@
         margin-bottom: 50px !important;
     }
 
-    .grid{
+    .grid {
         display: flex;
         justify-content: center;
         justify-items: center;
     }
 
     .card {
-
         width: 200px;
         height: 150px;
         margin-right: 50px;
@@ -83,22 +92,17 @@
         align-items: center;
 
         h1 {
-            font-size: 24px;
-        }
-        h2 {
-            font-size: 18px;
+            font-size: 1.2rem;
+            color: slategray;
         }
         p {
             font-size: 20px;
             font-weight: bold;
         }
-
-
     }
 
     .group.card {
         transition: transform 0.2s ease-in;
-    
         &:hover {
             transform: scale(1.1);
         }

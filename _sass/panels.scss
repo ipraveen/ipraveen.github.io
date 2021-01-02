@@ -20,9 +20,9 @@
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
-               
+
                 b {
-                    margin-top: .6rem;
+                    margin-top: 0.6rem;
                     color: slategray;
                 }
             }
@@ -42,8 +42,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 300px;
-        height: 250px;
+        width: 250px;
+        height: 200px;
 
         background: white;
         padding: 2rem;
@@ -117,5 +117,110 @@
         .video {
             margin: 10px;
         }
+    }
+}
+
+.experience {
+    .container {
+        background: white;
+        border-radius: 10px;
+        padding: 30px;
+        .company {
+            margin: 50px 0;
+        }
+    }
+    .grid {
+        grid-template-columns: 200px 1fr;
+        grid-row-gap: 3rem;
+        row-gap: 3rem;
+        align-items: flex-start;
+    }
+    .company {
+        .logo {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+
+            span {
+                margin: 10px 0;
+                color: gray;
+                font-size: 0.8rem;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .tech {
+        display: flex;
+        gap: 10px;
+
+        li {
+            background: #17a2b8;
+            color: white;
+            border-radius: 3px;
+            padding: 0 12px;
+            font-size: 0.7rem;
+            letter-spacing: 1px;
+            line-height: 1.4rem;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.education {
+    .grid {
+        grid-auto-rows: auto;
+    }
+
+    .item {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 280px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        text-align: center;
+    }
+
+    h1 {
+        margin: 1px 0;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+
+    h4 {
+        font-size: 0.8rem;
+    }
+}
+
+.certifications {
+    .item {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 180px;
+    }
+
+    h1 {
+        margin: 1px 0;
+        font-size: 1.1rem;
+        margin-top: 1rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+        color: gray;
     }
 }

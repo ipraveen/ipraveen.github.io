@@ -1,5 +1,4 @@
 ---
-postId: "js-reverse"
 layout: post
 author: Praveen Singh
 tags: javascript
