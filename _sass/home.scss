@@ -10,20 +10,18 @@
 
         .showcase-image {
             display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: flex-end;
-            > div {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                .fab {
-                    margin-right: 1rem;
-                }
-            }
+            justify-content: flex-end;
+            align-items: center;
+            // > div {
+            //     display: flex;
+            //     flex-direction: column;
+            //     justify-content: center;
+            //     align-items: center;
+            //     .fab {
+            //         margin-right: 1rem;
+            //     }
+            // }
             img {
-                margin-bottom: 30px;
                 width: 180px;
                 border: 4px solid hsla(0, 0%, 100%, 100%);
                 border-radius: 200px;

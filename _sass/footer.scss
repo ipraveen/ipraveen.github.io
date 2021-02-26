@@ -1,14 +1,25 @@
 .footer {
-    .social {
-        text-align: end;
-        a {
-            margin: 0 10px;
-            color: var(--primary-invert-color);
-        }
-    }
+   .container{
+       display: flex;
+       justify-content: space-between;
+   }
+   .bio{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+   }
+   
 
     p {
         margin-top: .5rem;
+        color: var(--primary-invert-color);
+    }
+}
+
+.social {
+    a {
+        margin-right: 1.2rem;
         color: var(--primary-invert-color);
     }
 }
