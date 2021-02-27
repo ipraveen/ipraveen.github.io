@@ -46,6 +46,7 @@
             font-weight: 500;
             margin: 0 0 30px 0;
             color: var(--primary-invert-bold-color);
+            text-align: center;
 
             @media (max-width: $tablet-breakpoint) {
                 font-size: 1.8rem;
