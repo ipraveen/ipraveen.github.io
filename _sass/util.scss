@@ -132,6 +132,15 @@ pre {
     font-size: 14px;
     margin: 40px 0;
     overflow: auto;
+
+    @media (max-width: $tablet-breakpoint) {
+        width: 98vw !important;
+        margin: 0 auto;
+
+        padding: 10px;
+        font-size: 12px;
+        margin: 20px 0;
+    }
 }
 
 code.language-plaintext {

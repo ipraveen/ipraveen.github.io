@@ -1,18 +1,23 @@
 .footer {
-   .container{
-       display: flex;
-       justify-content: space-between;
-   }
-   .bio{
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
-   }
-   
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: $mobile-breakpoint) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .bio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
     p {
-        margin-top: .5rem;
+        margin-top: 0.5rem;
         color: var(--primary-invert-color);
     }
 }
