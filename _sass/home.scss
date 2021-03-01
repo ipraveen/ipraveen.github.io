@@ -1,6 +1,7 @@
 .intro-banner,
 .post-banner {
-    background-color: #444e5c;
+   background-color: #3b77c4;
+   background-image: url('/assets/images/banner-back.jpg');
 
     @media (max-width: $mobile-breakpoint) {
         text-align: center;
