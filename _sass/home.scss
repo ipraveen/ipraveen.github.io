@@ -2,6 +2,9 @@
 .post-banner {
    background-color: #3b77c4;
    background-image: url('/assets/images/banner-back.jpg');
+   background-position: center; /* Center the image */
+   background-repeat: no-repeat; /* Do not repeat the image */
+   background-size: cover;
 
     @media (max-width: $mobile-breakpoint) {
         text-align: center;
