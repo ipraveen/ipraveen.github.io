@@ -34,7 +34,8 @@
     }
 }
 
-.work-showcase {
+.work-showcase,
+.exp-showcase {
     .container {
         display: flex;
         justify-content: center;
@@ -102,6 +103,34 @@
     }
 }
 
+.exp-showcase {
+    .item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+        height: 200px;
+    }
+    .logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+
+        span {
+            margin-top: 1rem;
+            font-size: 0.8rem;
+            color: gray;
+
+            &.bold{
+                font-weight: bold;
+            }
+        }
+    }
+}
+
 .video-group {
     background-color: #fff;
     border-radius: 10px;
@@ -129,54 +158,6 @@
 
         .video {
             margin: 10px;
-        }
-    }
-}
-
-.experience {
-    .container {
-        background: white;
-        border-radius: 10px;
-        padding: 30px;
-        .company {
-            margin: 50px 0;
-        }
-    }
-    .grid {
-        grid-template-columns: 200px 1fr;
-        grid-row-gap: 3rem;
-        row-gap: 3rem;
-        align-items: flex-start;
-    }
-    .company {
-        .logo {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-
-            span {
-                margin: 10px 0;
-                color: gray;
-                font-size: 0.8rem;
-                text-transform: uppercase;
-            }
-        }
-    }
-
-    .tech {
-        display: flex;
-        gap: 10px;
-
-        li {
-            background: #17a2b8;
-            color: white;
-            border-radius: 3px;
-            padding: 0 12px;
-            font-size: 0.7rem;
-            letter-spacing: 1px;
-            line-height: 1.4rem;
-            text-transform: uppercase;
         }
     }
 }
