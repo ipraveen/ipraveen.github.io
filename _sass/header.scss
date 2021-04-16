@@ -9,6 +9,20 @@ section.header {
         align-items: center;
     }
 
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a {
+            margin-left: 20px;
+            font-size: 1.2rem;
+
+            &:hover{
+                color: rgb(238, 231, 231);
+            }
+        }
+    }
+
     .avatar {
         width: 60px;
         transition: transform 0.2s ease-in;

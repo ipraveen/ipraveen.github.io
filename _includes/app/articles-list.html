@@ -1,7 +1,48 @@
-<section class="posts">
-    <div class="container grid">
-        {% for post in site.posts %}
-        {% include app/post-card.html %}
-        {% endfor %}
+<section id="blog" class="blog">
+    <div class="header">
+        <p class="header1">Blogs</p>
     </div>
+    <ul class="slider">
+        Posts go here
+    </ul>
 </section>
+
+<script>
+    fetch('https://api.rss2json.com/v1/api.json?rss_url=https://ipraveen.medium.com/feed')
+        .then((res) => res.json())
+        .then((data) => {
+            const res = data.items; //This is an array with the content. No feed, no info about author etc..
+            const posts = res.filter((item) => item.categories.length > 0); // That's the main trick* !
+
+            // Functions to create a short text out of whole blog's content
+            function toText(node) {
+                let tag = document.createElement('div');
+                tag.innerHTML = node;
+                // node = tag.innerText;
+                return tag.querySelector('blockquote') ? tag.querySelector('blockquote').innerText : '';
+            }
+
+            // Put things in right spots of markup
+            let output = '';
+            posts.forEach((item) => {
+                console.log(item.content);
+                output += `
+         <li class="post card">
+            <a target="_blank" href="${item.link}">
+               <img src="${item.thumbnail}" class="topImg"></img>
+               <div class="content">
+                  <div class="blog_preview">
+                     <h2 class="title">${item.title}</h2>
+                     <p class="intro">${toText(item.content)}</p>
+                  </div>
+                  <hr>
+                  <div class="info">
+                     <span class="date">${item.pubDate}</span>
+                  </div>
+               </div>
+            <a/>
+         </li>`;
+            });
+            document.querySelector('.slider').innerHTML = output;
+        });
+</script>
