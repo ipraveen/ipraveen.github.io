@@ -7,8 +7,11 @@
     </ul>
 </section>
 
+
 <script>
-    fetch('https://api.rss2json.com/v1/api.json?rss_url=https://ipraveen.medium.com/feed')
+
+const ts = Math.round((new Date()).getTime() / 1000);
+    fetch(`https://api.rss2json.com/v1/api.json?rss_url=https://ipraveen.medium.com/feed?t=1618604793`)
         .then((res) => res.json())
         .then((data) => {
             const res = data.items; //This is an array with the content. No feed, no info about author etc..
@@ -25,7 +28,7 @@
             // Put things in right spots of markup
             let output = '';
             posts.forEach((item) => {
-                console.log(item.content);
+                // console.log(item.content);
                 output += `
          <li class="post card">
             <a target="_blank" href="${item.link}">
@@ -34,10 +37,6 @@
                   <div class="blog_preview">
                      <h2 class="title">${item.title}</h2>
                      <p class="intro">${toText(item.content)}</p>
-                  </div>
-                  <hr>
-                  <div class="info">
-                     <span class="date">${item.pubDate}</span>
                   </div>
                </div>
             <a/>
