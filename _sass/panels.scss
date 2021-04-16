@@ -124,7 +124,7 @@
             font-size: 0.8rem;
             color: gray;
 
-            &.bold{
+            &.bold {
                 font-weight: bold;
             }
         }
@@ -217,4 +217,11 @@
         font-size: 1rem;
         color: gray;
     }
+}
+
+.tag {
+    margin: 2px 5px;
+    background: gray;
+    color: white;
+    display: inline-block;
 }

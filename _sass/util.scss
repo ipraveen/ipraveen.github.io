@@ -35,7 +35,7 @@
 .card {
     background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 0 2px rgba(0,0,0,0.1);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin: 10px;
     color: #333;
@@ -106,7 +106,7 @@
     text-align: center;
 }
 
-.center{
+.center {
     display: grid;
     place-content: center;
 }
@@ -294,4 +294,15 @@ h3 {
     &-5 {
         padding: 4rem 0;
     }
+}
+
+.tag {
+    padding: 2px 5px;
+    margin: 0 6px;
+    background: #607d8b;
+    color: white;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 0.5rem;
+    font-weight: 600;
 }
