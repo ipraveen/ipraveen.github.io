@@ -1,7 +1,8 @@
 .intro-banner,
 .post-banner {
-   background-color: #3b77c4;
-   background-image: url('/assets/images/banner-back.jpg');
+   background-color: #5b9190;
+  //  background-image: url('/assets/images/banner-back.jpg');
+  background-image: linear-gradient(to right top, #5b9190, #5c9695, #5c9b99, #5da09e, #5da5a3);
    background-position: center; /* Center the image */
    background-repeat: no-repeat; /* Do not repeat the image */
    background-size: cover;
